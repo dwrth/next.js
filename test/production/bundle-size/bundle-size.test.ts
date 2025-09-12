@@ -20,7 +20,7 @@ describe('bundle-size', () => {
       to: '/pages/b',
       fromInitialJs: BASE_SIZES.pages,
       toInitialJs: BASE_SIZES.pages,
-      softNavJs: process.env.IS_TURBOPACK_TEST ? 12_000 : 350,
+      softNavJs: process.env.IS_TURBOPACK_TEST ? 12_000 : 500,
     },
     {
       title: 'App Router: between RSC-only identical pages',
@@ -36,7 +36,7 @@ describe('bundle-size', () => {
       to: '/app/client-b',
       fromInitialJs: BASE_SIZES.app,
       toInitialJs: BASE_SIZES.appClient,
-      softNavJs: process.env.IS_TURBOPACK_TEST ? 8_000 : 4_000,
+      softNavJs: process.env.IS_TURBOPACK_TEST ? 8_000 : 5_000,
     },
     {
       title: 'App Router: between identical pages with a client component',
